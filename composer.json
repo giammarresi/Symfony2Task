@@ -8,16 +8,23 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.5.*",
+        "symfony/symfony": "2.3.*",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
+        "doctrine/common": "2.3.0",
         "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "~2.3",
+        "mango-group/symfony": "dev-master",
         "symfony/swiftmailer-bundle": "~2.3",
-        "symfony/monolog-bundle": "~2.4",
-        "sensio/distribution-bundle": "~3.0",
-        "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "symfony/monolog-bundle": "~2.3",
+        "symfony/monolog-bridge": "~2.4",
+        "sensio/distribution-bundle": "2.3.*",
+        "sensio/framework-extra-bundle": "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "propel/propel-bundle": "1.2.x-dev",
+        "friendsofsymfony/user-bundle": "dev-master",
+        "cedriclombardot/admingenerator-generator-bundle": "dev-master",
+        "cedriclombardot/admingenerator-user-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
@@ -44,7 +51,8 @@
         ]
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "component-dir": "web/components"
     },
     "extra": {
         "symfony-app-dir": "app",
@@ -53,7 +61,8 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "2.5-dev"
+            "dev-master": "2.3-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
